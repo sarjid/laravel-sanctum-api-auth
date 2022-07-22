@@ -6,10 +6,10 @@ function productImagePath($image_name)
 }
 
 
-function send_msg($msg, $code = 404)
+function send_msg($msg, $status, $code = 404)
 {
     $response = [
-        'status' => true,
+        'status' => $status,
         'message' => $msg,
     ];
     return response()->json($response, $code);
