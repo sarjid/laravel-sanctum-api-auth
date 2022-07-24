@@ -72,7 +72,7 @@ class AuthController extends Controller
         return send_msg('Logout Success', true, 200);
     }
 
-    public function user(Request $request)
+    public function me(Request $request)
     {
         return AuthResource::make($request->user());
     }

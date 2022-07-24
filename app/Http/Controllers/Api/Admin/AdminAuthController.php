@@ -37,7 +37,7 @@ class AdminAuthController extends Controller
         return send_msg('Admin Logout Success', true, 200);
     }
 
-    public function user(Request $request)
+    public function me(Request $request)
     {
         return AuthResource::make($request->user());
     }
